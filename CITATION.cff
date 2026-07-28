@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use AutoGraphFM, please cite this repository."
+title: "AutoGraphFM: Auditable Graph-Temporal Forecasting for Automotive Demand"
+type: software
+authors:
+  - family-names: "Shu"
+    given-names: "Xinyu"
+repository-code: "https://github.com/xinyushu766-art/AutoGraphFM"
+version: "0.18.0"
+date-released: "2026-07-28"
+license: MIT

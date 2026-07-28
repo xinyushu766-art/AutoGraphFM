@@ -1,0 +1,8 @@
+challenger,control,paired_cells,wape_difference_percentage_points,ci95_low,ci95_high,challenger_significantly_better
+stability_selected_static_residual_gru,last_value,1926,0.03931222311142611,0.011231025190413328,0.06674589096577208,False
+stability_selected_static_residual_gru,residual_temporal_gru,1926,-0.03195773994841347,-0.05690993110222389,-0.005942577560749278,True
+stability_selected_static_residual_gru,safe_static_graph_gru,1926,0.0013788549252594915,-0.021581094693349335,0.02413443115009407,False
+stability_selected_static_residual_gru,safe_identity_graph_gru,1926,-0.06984419204900208,-0.09604578142046992,-0.042234077564625584,True
+stability_selected_static_residual_gru,safe_permuted_graph_gru,1926,-0.041376705119785966,-0.06984649941801939,-0.01585110571447434,True
+stability_selected_static_residual_gru,adaptive_mtgnn_graph_gru,1926,-0.007044509704049982,-0.03391762133154082,0.02445638967119054,False
+stability_selected_static_residual_gru,direct_sparse_graph_gru,1926,-0.011545223361475117,-0.03730487374387709,0.012329862135504714,False

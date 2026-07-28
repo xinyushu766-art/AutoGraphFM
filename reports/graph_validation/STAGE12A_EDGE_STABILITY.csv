@@ -1,0 +1,4 @@
+model_name,mean_pairwise_jaccard,stable_edge_ratio,stable_edge_count,candidate_edge_count
+direct_sparse_graph_gru,0.15947467166979365,0.3167701863354037,51,161
+stability_selected_sparse_graph_gru,1.0,1.0,72,72
+stability_selected_static_residual_gru,1.0,1.0,72,72

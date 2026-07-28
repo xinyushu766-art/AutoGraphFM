@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autogfm"
+version = "0.18.0"
+description = "Auditable graph-temporal machine learning for automotive demand forecasting."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Xinyu Shu" }
+]
+keywords = [
+    "automotive",
+    "forecasting",
+    "graph-neural-networks",
+    "machine-learning",
+    "mlops",
+    "time-series",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.26",
+    "torch>=2.2,<3.0",
+    "SQLAlchemy>=2.0.50,<2.1",
+    "alembic>=1.18,<2.0",
+    "pydantic>=2.13,<3.0",
+    "pydantic-settings>=2.14,<3.0",
+    "python-dotenv>=1.0,<2.0",
+]
+
+[project.optional-dependencies]
+postgres = [
+    "psycopg[binary]>=3.2,<4.0",
+]
+snapshot = [
+    "pyarrow>=16,<24",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/xinyushu766-art/AutoGraphFM"
+Repository = "https://github.com/xinyushu766-art/AutoGraphFM"
+Issues = "https://github.com/xinyushu766-art/AutoGraphFM/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+ignore = ["E501"]
